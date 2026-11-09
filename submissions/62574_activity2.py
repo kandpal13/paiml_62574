@@ -1,10 +1,17 @@
-text = input("Enter your words: ")
+def sort_words_alphabetically(text):
+  
+  # Split the text into a list of words
+  words_list = text.split()
+  
+  # Sort the list alphabetically
+  words_list.sort(key=str.capitalize)
 
-# Split the text into a list of words
-words_list = text.split()
+  # Print the result
+  print(words_list)
 
-# Sort the list alphabetically
-words_list.sort()
+# Taking input from the user
+text = input()
+# Calling the function and providing 'text' as argument
+sort_words_alphabetically(text)
 
-# Print the result
-print(words_list)
+# Happy Many Apple Ola mango banana bAnana baNana
