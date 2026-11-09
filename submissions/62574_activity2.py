@@ -7,7 +7,7 @@ def sort_words_alphabetically(text):
   words_list.sort(key=str.capitalize)
 
   # Print the result
-  print(words_list)
+  return(words_list)
 
 # Taking input from the user
 text = input()
